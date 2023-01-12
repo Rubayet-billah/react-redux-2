@@ -1,9 +1,11 @@
 import './App.css';
+import Todos from './components/Todos';
 
 function App() {
   return (
     <div className="App">
       <h1>React Redux Part 2</h1>
+      <Todos />
     </div>
   );
 }

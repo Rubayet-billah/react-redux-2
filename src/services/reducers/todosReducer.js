@@ -17,13 +17,15 @@ const todosReducer = (state = initialState, action) => {
         case GET_TODOS_SUCCESS:
 
             return {
-                ...state,
+                isLoading: false,
                 todos: action.payload,
+                error: null
             }
         case GET_TODOS_FAILED:
 
             return {
-                ...state,
+                isLoading: false,
+                todos: [],
                 error: action.payload
             }
 
