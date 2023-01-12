@@ -1,0 +1,23 @@
+.parent-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+.child-container {
+  background-color: #474e68;
+  color: white;
+  padding: 50px;
+  font-size: 25px;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .parent-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 420px) {
+  .parent-container {
+    grid-template-columns: 1fr;
+  }
+}
