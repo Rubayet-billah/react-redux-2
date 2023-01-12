@@ -7,7 +7,7 @@ const Todos = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(getAllTodos)
+        dispatch(getAllTodos())
     }, [])
 
     return (
@@ -15,6 +15,9 @@ const Todos = () => {
             <h1>Todos App</h1>
             {isLoading && <h1>Loading...</h1>}
             {error && <h1>{error.message}</h1>}
+            {
+                todos?.map(todo => <div>{todo.title}</div>)
+            }
         </div>
     );
 };
