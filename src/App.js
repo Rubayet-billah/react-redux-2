@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h1>React Redux Part 2</h1>
-      <Todos />
+      <Todos /><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid vitae quidem illo aperiam dignissimos quia voluptas a, reiciendis voluptatibus, unde asperiores, reprehenderit vero voluptatem non ut provident nisi odio amet.</p>
     </div>
   );
 }
